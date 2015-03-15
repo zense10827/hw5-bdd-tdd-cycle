@@ -1,0 +1,13 @@
+#นางสาว ณัฐณิชา เหลืองอ่อน 5510613424
+#นาย ธนภัทร ซู 5510613408
+
+-# in app/views/movies/same_director.html.haml
+
+%h2 Related movies by director
+
+%ul#related_movies
+  - @movies.each do |movie|
+    %li
+      = movie.title
+
+= link_to 'Back to movie list', movies_path
